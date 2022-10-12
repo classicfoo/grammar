@@ -24,7 +24,7 @@
         output.value = output.value.replace(/\n./g,function(v){return v.toUpperCase()});
         //Capitalize each letter after each sentence.
         output.value = output.value.replace(/\. ./g,function(v){return v.toUpperCase()});
-        //Capitalize each letter after each sentence.
+        //Capitalize the letter i when on it's own.
         output.value = output.value.replace(/ i /g,function(v){return v.toUpperCase()});
         
 
