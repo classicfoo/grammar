@@ -18,10 +18,14 @@
     var output = document.getElementById("output");
     function calculate()
     {
+        //Capitalize the first letter
+        output.value = input.value[0].toUpperCase()+input.value.substring(1);
         //Capitalize the first letter of first sentence.
-        output.value = input.value.replace(/\n./g,function(v){return v.toUpperCase()});
+        output.value = output.value.replace(/\n./g,function(v){return v.toUpperCase()});
         //Capitalize each letter after each sentence.
         output.value = output.value.replace(/\. ./g,function(v){return v.toUpperCase()});
+        //Capitalize each letter after each sentence.
+        output.value = output.value.replace(/ i /g,function(v){return v.toUpperCase()});
         
 
     }
